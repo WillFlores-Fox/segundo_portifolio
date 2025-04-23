@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo geral com wallpaper */
+body {
+  font-family: cursive, sans-serif;
+  background: url('https://images.unsplash.com/photo-1530906622963-8a60586a49c7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Cabeçalho */
+#header {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #000 80%, transparent);
+  z-index: 1;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: hwb(0 10% 13%);
+}
+
+/* Seções */
+main {
+  padding: 2rem;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* fundo semi-transparente */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Trabalhos */
+.trabalho {
+  margin-top: 1rem;
+}
+
+.escolar {
+  margin-top: 1rem;
+}
+
+/* Rodapé */
+#footer {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to top, #000 80%, transparent);
+  z-index: 1;
+}
+
+/* Layout zigue-zague */
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.conteudo.invertido {
+  flex-direction: row-reverse;
+}
+
+.texto {
+  flex: 1;
+}
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.perfil {
+  width: 300px;
+  height: 350px;
+}
+
+.torneio{
+  width: 350px;
+  height: 300px;
+}
+
+.codigo{
+  width: 350px;
+  height: 300px;
+}
+
+.linguagens{
+  width: 400px;
+  height: 350px;
+}
+
+.texto .trabalho .links {
+  font-family: cursive;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.texto .trabalho .links:hover {
+  color: hwb(0 10% 13%);
+}
+
+#contato .contatos{  
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#contato .foto{
+  height: 20px;
+  width: 20px;
+}
+
+.comunicacao{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.comunicacao .c{
+  display: flex;
+  gap: 5px;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
